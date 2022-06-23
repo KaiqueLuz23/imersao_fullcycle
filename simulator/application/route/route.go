@@ -78,4 +78,5 @@ func (r *Route) ExportJsonPositions() ([]string, error) {
 		}
 		result = append(result, string(jsonRoute))
 	}
+	return result, nil
 }
