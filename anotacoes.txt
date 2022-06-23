@@ -1,1 +1,4 @@
 teste
+
+
+go mod init github.com/kaiqueluz/imersapfsfc2-simulator
