@@ -13,5 +13,5 @@ func main() {
 	}
 	route.LoadPositions()
 	stringjson, _ := route.ExportJsonPositions()
-	fmt.Println((stringjson[0]))
+	fmt.Println(stringjson[1])
 }
