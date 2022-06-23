@@ -8,8 +8,8 @@ import (
 
 func main() {
 	route := route.Route{
-		ID:       "1",
-		ClientID: "1",
+		ID:       "2",
+		ClientID: "2",
 	}
 	route.LoadPositions()
 	stringjson, _ := route.ExportJsonPositions()
