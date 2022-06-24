@@ -2,3 +2,7 @@ teste
 
 
 go mod init github.com/kaiqueluz/imersapfsfc2-simulator
+
+
+
+kafka-console-consumer --bootstrap-server=localhost:9092 --topic=readtest
