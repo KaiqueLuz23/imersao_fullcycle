@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	msgChan := make(chan *ckafka.Message)
+	msgChan := make(chan ckafka.Message)
 	cosumer := kafka.NewKafkaConsumer(msgChan)
 	go cosumer.Consume()
 	for msg := range msgChan {
