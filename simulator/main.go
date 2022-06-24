@@ -10,9 +10,9 @@ func main() {
 	msgChan := make(chan *ckafka.Message)
 	cosumer := kafka.NewKafkaConsumer(msgChan)
 	go cosumer.Consume()
-
 	for msg := range msgChan {
 		fmt.Println(string(msg.Value))
+		go kafka.NewKafkaProducer().Produce(msg)
 	}
 	//producer := kafka.NewKafkaProducer()
 	//kafka.Publish("Olá", "readtest", producer)
